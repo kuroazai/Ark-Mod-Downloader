@@ -55,7 +55,6 @@ def install_mods():
         source = file.format(modid)
         targetloc = PM.moddir + r'\{}'.format(modid)
         shutil.move(source, targetloc)
-        os.remove(file.replace(r'\WindowsNoEditor', ''))
         print('Moved', modid, source)
 
 
